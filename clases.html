@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clases - Estudio de Danza</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="inscripcion.html">Inscripción</a>
+            <a href="cronograma.html">Cronograma</a>
+            <a href="clases.html">Clases</a>
+            <a href="instructores.html">Instructores</a>
+            <a href="galeria.html">Galería</a>
+            <a href="blog.html">Blog</a>
+            <a href="faq.html">FAQ</a>
+            <a href="ubicacion.html">Ubicación</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+    </header>
+    <main>
+        <section class="clases">
+            <h2>Nuestras Clases</h2>
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="clase-item">
+                            <img src="images/instructor.png" alt="Clase de Ballet">
+                            <h3>Ballet</h3>
+                            <p>Una clase de ballet clásica que abarca desde los fundamentos hasta técnicas avanzadas.</p>
+                            <button onclick="location.href='inscripcion.html'">Inscribirse</button>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="clase-item">
+                            <img src="images/instructor.png" alt="Clase de Hip-Hop">
+                            <h3>Hip-Hop</h3>
+                            <p>Movimientos urbanos y estilos de danza moderna en esta energética clase de Hip-Hop.</p>
+                            <button onclick="location.href='inscripcion.html'">Inscribirse</button>
+                        </div>
+                    </div>
+                    <!-- Agregar más clases aquí -->
+                </div>
+                <!-- Añadir controles de navegación -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        &copy; 2024 Estudio de Danza. Todos los derechos reservados.
+    </footer>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            slidesPerView: 1,
+            spaceBetween: 10,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            breakpoints: {
+                600: {
+                    slidesPerView: 1,
+                    spaceBetween: 20,
+                },
+                601: {
+                    slidesPerView: 2,
+                    spaceBetween: 30,
+                },
+                1024: {
+                    slidesPerView: 3,
+                    spaceBetween: 40,
+                },
+            },
+        });
+    </script>
+</body>
+</html>

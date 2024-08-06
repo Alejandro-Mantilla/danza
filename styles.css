@@ -1,0 +1,308 @@
+/* Aplicar estilos generales al cuerpo */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+    color: #333;
+    overflow-x: hidden; /* Evitar el desbordamiento horizontal */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Encabezado */
+header {
+    background-color: #333;
+    color: white;
+    padding: 1em;
+    text-align: center;
+}
+
+/* Navegación */
+nav a {
+    color: white;
+    margin: 0 1em;
+    text-decoration: none;
+    padding: 0.5em;
+    display: inline-block;
+}
+
+nav a:hover {
+    background-color: #555;
+}
+
+/* Sección de héroe */
+.hero {
+    position: relative;
+    text-align: center;
+    color: white;
+    margin-bottom: 2em;
+}
+
+.hero img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.hero-text h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 3em;
+}
+
+.hero-text button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 1em 2em;
+    cursor: pointer;
+    margin: 1em;
+    border-radius: 5px;
+}
+
+/* Testimonios */
+.testimonios {
+    padding: 2em;
+    text-align: center;
+}
+
+.testimonios p {
+    font-style: italic;
+}
+
+/* Pie de página */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em;
+    margin-top: auto;
+}
+
+/* Sección de contacto y formulario de inscripción */
+.contacto,
+.formulario-inscripcion,
+.cronograma,
+.instructores {
+    padding: 2em;
+    text-align: center;
+}
+
+.formulario-inscripcion form,
+.contacto form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.formulario-inscripcion label,
+.formulario-inscripcion input,
+.formulario-inscripcion select,
+.contacto label,
+.contacto input,
+contacto textarea,
+contacto button {
+    margin: 0.5em 0;
+}
+
+.formulario-inscripcion input,
+.formulario-inscripcion select,
+.contacto input,
+contacto textarea {
+    width: 100%;
+    max-width: 400px;
+    padding: 0.5em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contacto textarea {
+    height: 150px;
+}
+
+.contacto button,
+.formulario-inscripcion button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 1em 2em;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* Lista de instructores */
+.lista-instructores {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 1em;
+}
+
+.instructor {
+    text-align: center;
+    margin: 1em;
+    flex: 1 1 calc(33% - 2em);
+}
+
+.instructor img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.instructor h3 {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Filtros */
+.filtros button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 1em 2em;
+    cursor: pointer;
+    margin: 1em;
+    border-radius: 5px;
+}
+
+/* Calendario */
+.calendario {
+    text-align: left;
+    margin: 2em auto;
+    max-width: 800px;
+}
+
+/* Galería */
+.galeria {
+    padding: 2em;
+    text-align: center;
+}
+
+.galeria .fotos,
+.galeria .videos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.galeria .fotos img,
+.galeria .videos video {
+    width: 200px;
+    height: 200px;
+    margin: 1em;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+/* Blog */
+.blog {
+    padding: 2em;
+    text-align: left;
+}
+
+.blog article {
+    margin-bottom: 2em;
+}
+
+.blog article h3 {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* FAQ */
+.faq {
+    padding: 2em;
+    text-align: left;
+}
+
+.faq .pregunta {
+    margin-bottom: 2em;
+}
+
+.faq .pregunta h3 {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Ubicación */
+.ubicacion {
+    padding: 2em;
+    text-align: center;
+}
+
+/* Estilos para clases.html */
+.clases {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.clases h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.clases-lista {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.clase-item {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin: 10px;
+    padding: 15px;
+    width: 300px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.clase-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #f1f1f1;
+}
+
+.clase-item img {
+    max-width: 100%;
+    border-radius: 8px 8px 0 0;
+    transition: transform 0.3s;
+}
+
+.clase-item h3 {
+    margin: 15px 0;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.clase-item p {
+    font-size: 1em;
+    line-height: 1.5;
+    color: #555;
+    text-align: justify;
+}
+
+.clase-item button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: #333;
+    color: white;
+    font-size: 1em;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.clase-item button:hover {
+    background-color: #555;
+}
